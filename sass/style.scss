@@ -1,0 +1,26 @@
+// normalize default styles
+@import 'normalize';
+
+// variables
+@import 'variables';
+
+// common styles
+@import 'global';
+@import 'typography';
+@import 'about';
+@import 'finder';
+@import 'header';
+@import 'alert';
+
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}

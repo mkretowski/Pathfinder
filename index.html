@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pathfinder</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+</head>
+<body>
+  <div class="body-container">
+    <header class="header">
+      <div id="nav" class="main-nav">
+        <a href="#about">ABOUT</a>
+        <a href="#finder">FINDER</a>
+      </div>
+      <div class="splash">
+        <h1 class="page-title">PATHFINDER</h1>
+        <h2 class="page-subtitle">FOR TRAVELLERS</h2>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="pages-wrapper">
+        <div id="pages" class="pages">
+          <section id="about">
+            <div class="about-wrapper"></div>
+          </section>
+          <section id="finder">
+            <div class="finder-wrapper">
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <p>All rights reserved</p>
+    </footer>
+
+    <div class="alert-container" id="alert-container"></div>
+  </div>
+
+  <script id="template-about" type="text/x-handlebars-template">
+    <div class="row-left">
+      <div class="image">
+        <img src="./images/1.jpg">
+        <div class="image-description">
+          <h3>PLAN YOUR JOURNEYS</h3>
+          <p>Pick attractions and book hotels</p>
+        </div>
+      </div>      
+    </div>
+    <div class="row-right">
+      <div class="image">
+        <img src="./images/2.jpg">
+        <div class="image-description">
+          <h3>MINIMALIZE BOREDOM </h3>
+          <p>Pick routes that are short and atractive</p>
+        </div>
+      </div>       
+    </div>
+  </script>
+
+  <script id="template-finder" type="text/x-handlebars-template">
+    <h3 class="finder-title">{{ title }}</h3>
+    <div class="grid"></div>
+    <a class="submitBtn" href="#">{{ buttonText }}</a>
+  </script>
+
+  <script id="template-alert" type="text/x-handlebars-template">
+    <div class="alert-wrapper" id="alert-wrapper">
+      <div id="alert-inner-wrapper" class="alert-inner-wrapper hide">
+        <i class="close fa-solid fa-xmark"></i>
+        <div class="alert">
+          <div class="alert-icon">
+            <i class="fa-solid {{ alertIcon }}"></i>
+          </div>
+          <div class="alert-description">
+            <p>{{ text }}</p>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>

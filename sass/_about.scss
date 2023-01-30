@@ -1,0 +1,59 @@
+.pages {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  top: -65%;
+  overflow: hidden;
+  padding: 20px;
+
+  .about-wrapper {
+    width: 1000px;
+    padding-top: 55px;
+
+    .row-left {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 40px;
+
+      .image {
+        position: relative;
+        height: 220px;
+        width: 330px;
+      }
+
+      .image-description {
+        position: absolute;
+        top: 55%;
+        right: -52%;
+        text-align: left;
+      }
+    }
+
+    .row-right {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 40px;
+
+      .image {
+        position: relative;
+        height: 280px;
+        width: 520px;
+      }
+
+      .image-description {
+        position: absolute;
+        top: 10%;
+        left: -35%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.image {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
