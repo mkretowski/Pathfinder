@@ -241,7 +241,7 @@ class Finder {
     thisFinder.nodes[start].edgeFields = [];
     thisFinder.fieldsVisited.push(start);
     //create array of start point adjoining fields
-    const edgeFields = [start + 1, start - 1, start + 10, start - 10];
+    const edgeFields = thisFinder.getEdgeFields(start);
     //find edge fields that are route fields and add them to adjoining fields collection for start node
     for (let field of edgeFields) {
       if (thisFinder.fieldsSelected.includes(field)) {
